@@ -1,0 +1,18 @@
+let words=[
+	"binary image",
+	"Kernel",
+	"RGBimage",
+	"HSVimage",
+	"DomainNameSystem",
+	"LocalAreaNetwork",
+	"Sustainable Development Goals",
+	//"International Organization for Standardization",
+	"Virtual Private Network",
+	"Central Processing Unit",
+	"Nash equilibrium",
+	"Synchronicity",
+	"Hypertext Transfer Protocol",
+	"deoxyribonucleicacid",
+	"ascorbicacid",
+	"Flip Flop",
+  ];
