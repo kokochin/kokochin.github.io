@@ -15,4 +15,8 @@ let words=[
 	"deoxyribonucleicacid",
 	"ascorbicacid",
 	"Flip Flop",
+	"Storage Area Network",
+	"Network Attached Storage",
+	"World Wide Web",
+	"Python",
   ];
