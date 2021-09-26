@@ -118,27 +118,11 @@ aside {
 /* ゲーム画面の設定
 ------------------------------------------------------------*/
 
-#wrapper {
-    position: relative;
+iframe {
 	margin: 0 auto;
-    width: 45%;
-	background-color: #65bb72;
+	width: 800px;
+	height: 600px;
 }
-
-#wrapper:before {
-    content:"";
-    display: block;
-    padding-top: 75%; /* 高さを幅の75%に固定 */
-}
-
-#content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 @media only screen and (max-width: 1299px){
