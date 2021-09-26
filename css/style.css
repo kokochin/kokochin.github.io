@@ -24,8 +24,13 @@ body {
 }
 */
 
+@font-face {
+	font-family: 'MyFont';
+	src: url('../font/imagineYOKOHAMA.otf');
+}
+
 html,body {
-	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-family:'MyFont';
 	font-weight: 300;
 	height:100%;
 	width:100%;
@@ -34,8 +39,6 @@ html,body {
 	text-align : center;
 	background-color : #EFEFEF;
 }
-
-
 
 
 /* 最初のろご
@@ -57,62 +60,47 @@ canvas {
 }
 
 
-/* indexそれぞれへのボタン
+/* 概要(id=abst)
 ------------------------------------------------------------*/
-
-aside {
-	margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-
-.footer_con_btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer_con_btn_report, .footer_con_btn .footer_con_btn_sibakari {
-    width: 65%;
-	height: 18%;
+#abst {
+	display: block;
 	margin: 0 auto;
-	margin-bottom: 5%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 800px;
+	padding: 30px 30px 30px 30px;
+	background-color: #b8e6fc;
+	text-align: left;
 }
 
-.footer_con_btn_report a, .footer_con_btn .footer_con_btn_sibakari a {
-    height: 200px;
-    color: #FFF;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-indent: 2px;
-	align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-	text-decoration: none;
-    display: flex;
-	font-size: 180%;
-	transition: .3s;
+.fire {
+	color: red;
+	font-size: 1.6em;
+	font-weight: bold;
 }
 
-
-.footer_con_btn_report a {
-    background: #6fc1c9;
+b {
+	font-size: 1.4em;
 }
 
-.footer_con_btn_report a:hover {
-    background: #56a0a7;
+/* ルール説明(id=rule)
+------------------------------------------------------------*/
+#rule {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 800px;
+	padding: 30px 30px 30px 30px;
+	background-color: #fccdee;
+	text-align: left;
 }
 
-.footer_con_btn_sibakari a {
-    background: #8BF29A;
-}
-
-.footer_con_btn_sibakari a:hover {
-    background: #65bb72;
+.pict {
+	display: block;
+	width: 750px;
+	height: auto;
+	margin:0 auto;
 }
  
 /* ゲーム画面の設定
