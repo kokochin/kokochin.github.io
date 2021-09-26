@@ -22,7 +22,7 @@ class keyButton{
 	  if(keyIsPressed && (this.isCode && keyCode==this.cap || key==this.cap)){
 		fill(150);
 	  }else if(this.on){
-		fill(200);
+		fill(255,200,20);
 	  }else{
 		fill(255);
 	  }
@@ -49,11 +49,12 @@ class keyButton{
 	let i=0;
 	for(let row=0;row<layout.length;row++){
 	  for(let col=0;col<layout[row].length;col++){
-		kbs[i++]=new keyButton(layout[row][col],layout[row][col],col*41+row*20,row*41,40,40);
+		kbs[i++]=new keyButton(layout[row][col].toUpperCase(),layout[row][col],col*41+row*20,row*41,40,40);
 	  }
 	}
 	kbs[i++]=new keyButton("SPACE",' ',120,164,200,40);
 	kbs[i++]=new keyButton("SHIFT",SHIFT,-42,123,100,40);
+	kbs[i++]=new keyButton("SHIFT",SHIFT,348,123,100,40);
 	print("init");
   }
   
@@ -62,7 +63,9 @@ class keyButton{
 	  kbs[i].setOn(kbs[i].cap==onKey.toLowerCase());
 	}
 	kbs[37].setOn(onKey!=onKey.toLowerCase());
+	kbs[38].setOn(onKey!=onKey.toLowerCase());
 	for(let i=0;i<kbs.length;i++){
 	  kbs[i].display(x,y);
 	}
   }
+  
