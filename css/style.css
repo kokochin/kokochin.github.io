@@ -26,7 +26,7 @@ body {
 
 @font-face {
 	font-family: 'MyFont';
-	src: url('../font/imagineYOKOHAMA.otf');
+	src: url('../font/851MkPOP_100.ttf');
 }
 
 html,body {
@@ -38,6 +38,18 @@ html,body {
 	margin-right : auto;
 	text-align : center;
 	background-color : #EFEFEF;
+}
+
+p {
+	font-size: 1.6em;
+	line-height: 1.3em;
+	display: block;
+}
+
+h2 {
+	font-size: 2em;
+	display: block;
+	margin-top: 45px;
 }
 
 
@@ -59,23 +71,52 @@ canvas {
 	margin: 0 auto;
 }
 
+#back {
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	width: 95%;
+	height: auto;
+	background-image: linear-gradient(0deg, transparent 31px, #cac9c9 32px),linear-gradient(90deg,  transparent 31px, #cac9c9 32px);
+  	background-color: #fdf8f3;
+  	background-size: 32px 32px;
+}
+
+
 
 /* 概要(id=abst)
 ------------------------------------------------------------*/
 #abst {
 	display: block;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 5px;
 	margin-bottom: 30px;
 	width: 800px;
 	padding: 30px 30px 30px 30px;
-	background-color: #b8e6fc;
+	position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    color: #454545;
 	text-align: left;
+}
+
+#abst:after {
+	position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #efefef #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .fire {
 	color: red;
 	font-size: 1.6em;
+	line-height: 2em;
 	font-weight: bold;
 }
 
@@ -88,11 +129,11 @@ b {
 #rule {
 	display: block;
 	margin: 0 auto;
-	margin-top: 30px;
 	margin-bottom: 30px;
 	width: 800px;
 	padding: 30px 30px 30px 30px;
-	background-color: #fccdee;
+	background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px);
 	text-align: left;
 }
 
@@ -101,16 +142,17 @@ b {
 	width: 750px;
 	height: auto;
 	margin:0 auto;
+	margin-top: 20px;
 }
  
 /* ゲーム画面の設定
 ------------------------------------------------------------*/
-
 iframe {
 	margin: 0 auto;
 	width: 800px;
 	height: 600px;
 }
+
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 @media only screen and (max-width: 1299px){
