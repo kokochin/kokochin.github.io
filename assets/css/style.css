@@ -53,16 +53,23 @@ h2 {
 }
 
 
-/* 最初のろご
+/* 最初のろご (nav)
 ------------------------------------------------------------*/
 #mainImg {
 	display: block;
-	width: auto;
-	height: 30%;
+	float: left;
+	width: 20%;
+	height: 20%;
 	margin: 0 auto;
 	margin-bottom: 2%;
 }
 
+#menu{
+	display: inline-block;
+	position: relative;
+	width: 10%;
+	height: auto;
+  }
 
 /* 共通
 ------------------------------------------------------------*/
@@ -175,3 +182,79 @@ iframe {
 	}
 	
 }
+
+/* 追加 説明書のポップアップ
+------------------------------------------------------------*/
+  .panel{
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+  }
+  
+  .panel-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #F16B6C;
+	background: rgba(241, 107, 108, .8);
+	transition: all 0.5s;
+  }
+  
+  
+  .l-nav{
+	/* position: fixed; */
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	/* 縦方向のスクロールバーを表示 */
+	overflow-y: scroll;
+
+  }
+  
+  .close{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background: url('../images/close_brack.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 15%;
+	height: 15%;
+	margin: 30px;
+  }
+  
+  
+  #smp1 {
+	margin:1em 0;
+	padding:1em;
+	border:solid 1px #ccc;
+    background-color:#ecf8fe
+	}
+#smp1 ul {
+	margin:0;
+    padding:0;
+	}
+#smp1 ul li {
+	display:inline; /*インラインに*/
+	font-weight:bold;
+	line-height:1em;
+    margin:0;
+	padding:0;
+	}
+#smp1 ul li:last-child::after {
+	content:''      /*最後の li要素には何もつけない*/
+	}
+#smp1 ul li a {
+	color:inherit;
+	text-decoration:none
+	}
+#smp1 ul li a:hover {
+	color:#39f;
+	text-decoration:underline
+	}
