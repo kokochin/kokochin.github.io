@@ -218,6 +218,7 @@ iframe {
   }
   
   .close{
+	cursor: pointer;
 	position: fixed;
 	top: 10px;
 	right: 10px;
@@ -230,12 +231,15 @@ iframe {
   }
   
   
-  #smp1 {
-	margin:1em 0;
+#smp1 {
+	margin: 0 auto;
+	margin-bottom: 1em;
 	padding:1em;
 	border:solid 1px #ccc;
-    background-color:#ecf8fe
-	}
+    background-color:#ecf8fe;
+	cursor: pointer;
+	height: 20%;
+}
 #smp1 ul {
 	margin:0;
     padding:0;
