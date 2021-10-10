@@ -413,8 +413,14 @@ iframe {
 	width: 15%;
 	height: 15%;
 	margin: 30px;
+	text-align: center;
   }
-  
+
+  .close:hover {
+	opacity: 0.5;
+  }
+
+
   
 #smp1 {
 	margin: 0 auto;
