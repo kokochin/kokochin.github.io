@@ -13,6 +13,18 @@ legend{display:none;}
 h1,h2,h3,h4,h5,h6{font-size:100%;}
 img,abbr,acronym,fieldset{border:0;}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 /*
 body {
 	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
@@ -58,8 +70,8 @@ h2 {
 #mainImg {
 	display: block;
 	float: left;
-	width: 20%;
-	height: 20%;
+	height: auto;
+	width: 15%;
 	margin: 0 auto;
 	margin-bottom: 2%;
 }
@@ -67,9 +79,48 @@ h2 {
 #menu{
 	display: inline-block;
 	position: relative;
-	width: 10%;
-	height: auto;
+	height: 100%;
+	font-size: 2.5em;
+	cursor: pointer;
+	margin-top: 3%;
+	padding: 15px;
   }
+
+  #menu.btn-border {
+	border-radius: 0;
+  }
+  
+  #menu.btn-border:before,
+  #menu.btn-border:after {
+	position: absolute;
+  
+	width: 100%;
+	height: 2px;
+  
+	content: '';
+	-webkit-transition: all .3s;
+	transition: all .3s;
+  
+	background: #000;
+  }
+  
+  #menu.btn-border:before {
+	top: 0;
+	left: 0;
+  }
+  
+  #menu.btn-border:after {
+	right: 0;
+	bottom: 0;
+  }
+  
+  #menu.btn-border:hover:before,
+  #menu.btn-border:hover:after {
+	width: 0;
+  }
+  
+
+  
 
 /* 共通
 ------------------------------------------------------------*/
@@ -90,7 +141,87 @@ canvas {
   	background-size: 32px 32px;
 }
 
+#leftwall {
+	display: flex;
+	position: absolute;
+	background: linear-gradient(-45deg, #082175, #6f8ef1, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	display: block;
+	line-height: 110px;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+}
 
+#leftwall::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.5;
+	background: url(../images/reportdash_r.png);
+}
+
+#rightwall {
+	display: flex;
+	position: absolute;
+	background: linear-gradient(-45deg, #082175, #6f8ef1, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	display: block;
+	line-height: 110px;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	right: 0;
+}
+
+#rightwall::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.5;
+	background: url(../images/reportdash_t.png);
+}
+
+#headpic01 {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 25%;
+	width: 100px;
+	height: 100px;
+	background-color: #454545;
+	color: #FFF;
+}
+
+#headpic02 {
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25%;
+	width: 100px;
+	height: 100px;
+	background-color: #454545;
+	color: #FFF;
+}
+
+#footwall {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	background: #ecf8fe;
+}
 
 /* 概要(id=abst)
 ------------------------------------------------------------*/
@@ -162,16 +293,56 @@ iframe {
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
-@media only screen and (max-width: 1299px){
+@media only screen and (max-width: 1360px){
 
 	#wrapper {
 		width: 55%;
+	}
+
+	#leftwall {
+		width: 15%;
+	}
+
+	#rightwall {
+		width: 15%;
+	}
+	
+}
+
+@media only screen and (max-width: 1200px){
+
+	#wrapper {
+		width: 55%;
+	}
+
+	#leftwall {
+		width: 10%;
+	}
+
+	#rightwall {
+		width: 10%;
+	}
+	
+}
+
+@media only screen and (max-width: 1000px){
+
+	#wrapper {
+		width: 55%;
+	}
+
+	#leftwall {
+		width: 5%;
+	}
+
+	#rightwall {
+		width: 5%;
 	}
 	
 }
 
 
-@media only screen and (max-width: 799px){
+@media only screen and (max-width: 870px){
 	#wrapper {
 		width: 75%;
 	}
@@ -180,7 +351,21 @@ iframe {
 		height: 25%;
 		width: auto;
 	}
+
+	#leftwall {
+		width: 0%;
+	}
+
+	#rightwall {
+		width: 0%;
+	}
 	
+}
+
+@media only screen and (max-height: 910px){
+	#footwall {
+		height: 0;
+	}
 }
 
 /* 追加 説明書のポップアップ
@@ -237,9 +422,10 @@ iframe {
 	padding:1em;
 	border:solid 1px #ccc;
     background-color:#ecf8fe;
-	cursor: pointer;
-	height: 20%;
+	height: 15%;
+	width: 100%;
 }
+
 #smp1 ul {
 	margin:0;
     padding:0;
