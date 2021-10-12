@@ -64,6 +64,10 @@ h2 {
 	margin-top: 45px;
 }
 
+u {
+	color: black;
+}
+
 
 /* 最初のろご (nav)
 ------------------------------------------------------------*/
@@ -195,23 +199,31 @@ canvas {
 #headpic01 {
 	display: block;
 	position: absolute;
-	top: 25px;
-	left: 25%;
-	width: 100px;
-	height: 100px;
-	background-color: #454545;
+	top: 2%;
+	left: 26%;
+	width: 125px;
+	height: 125px;
+	background-color: #9c9797;
 	color: #FFF;
+	border-radius: 50%;
 }
 
 #headpic02 {
 	display: block;
 	position: absolute;
-	top: 25px;
-	right: 25%;
-	width: 100px;
-	height: 100px;
-	background-color: #454545;
+	top: 2%;
+	right: 26%;
+	width: 125px;
+	height: 125px;
+	background-color: #9c9797;
 	color: #FFF;
+	border-radius: 50%;
+}
+
+.ico {
+	margin: 0 auto;
+	width: 125%;
+	height: auto;
 }
 
 #footwall {
@@ -262,6 +274,13 @@ b {
 	font-size: 1.4em;
 }
 
+#abstimg {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+}
+
 /* ルール説明(id=rule)
 ------------------------------------------------------------*/
 #rule {
@@ -281,6 +300,10 @@ b {
 	height: auto;
 	margin:0 auto;
 	margin-top: 20px;
+}
+
+.textcenter {
+	text-align: center;
 }
  
 /* ゲーム画面の設定
@@ -322,6 +345,14 @@ iframe {
 	#rightwall {
 		width: 10%;
 	}
+
+	#headpic01 {
+		left: 23%;
+	}
+
+	#headpic02 {
+		right: 23%;
+	}
 	
 }
 
@@ -337,6 +368,14 @@ iframe {
 
 	#rightwall {
 		width: 5%;
+	}
+
+	#headpic01 {
+		left: 15%;
+	}
+
+	#headpic02 {
+		right: 15%;
 	}
 	
 }
