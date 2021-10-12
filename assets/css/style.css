@@ -312,6 +312,9 @@ b.abstcenter {
 	height: auto;
 	margin:0 auto;
 	margin-top: 20px;
+	margin-bottom: 20px;
+	background:rgba(255,255,255,0.7);
+	padding: 20px;
 }
 
 .textcenter {
