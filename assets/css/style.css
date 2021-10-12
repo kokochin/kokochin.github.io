@@ -281,6 +281,18 @@ b {
 	height: auto;
 }
 
+b.abstcenter {
+	text-align: center;
+}
+
+.fire2 {
+	text-align: center;
+	color: red;
+	font-size: 1.4em;
+	line-height: 2em;
+	font-weight: bold;
+}
+
 /* ルール説明(id=rule)
 ------------------------------------------------------------*/
 #rule {
@@ -289,8 +301,8 @@ b {
 	margin-bottom: 30px;
 	width: 800px;
 	padding: 30px 30px 30px 30px;
-	background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px);
-    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px);
+	background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px );
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#fde2f5 3px, #fde2f5 7px );
 	text-align: left;
 }
 
