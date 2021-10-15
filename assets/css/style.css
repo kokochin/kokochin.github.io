@@ -540,6 +540,7 @@ iframe {
 
 	#sorry {
 		margin: 0 auto;
+		margin-bottom: 30px;
 		width: 70vw;
 		height: auto;
 		font-size: 1.3em;
@@ -554,7 +555,7 @@ iframe {
 		display: block;
 		position: absolute;
 		width: 100vw;
-		height: 100vh;
+		height: auto;
 		top: 0;
 		left: 0;
 	}
