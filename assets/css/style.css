@@ -154,7 +154,7 @@ canvas {
 	display: block;
 	line-height: 110px;
 	width: 20%;
-	height: 770px;
+	height: 100%;
 	text-align: center;
 	color: #fff;
 }
@@ -179,7 +179,7 @@ canvas {
 	display: block;
 	line-height: 110px;
 	width: 20%;
-	height: 770px;
+	height: 100%;
 	text-align: center;
 	color: #fff;
 	right: 0;
@@ -598,5 +598,19 @@ iframe {
 @media only screen and (max-height: 910px){
 	#footwall {
 		height: 0;
+	}
+}
+
+@media only screen and (max-height: 770px){
+	#footwall {
+		height: 0;
+	}
+
+	#rightwal {
+		height: 770px;
+	}
+
+	#leftwall {
+		height: 770px;
 	}
 }
